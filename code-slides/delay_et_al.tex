@@ -65,7 +65,7 @@
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 \title{ComExp}
-\subtitle{Comment pousser l'accompagnement jusqu'à l'exploration des modèles à base d'agents.}
+\subtitle{Comment pousser l'accompagnement jusqu'a l'exploration des modèles a base d'agents.}
 %\date{\small{\jobname}}
 %\date{\today}
 \author{\texttt{E. Delay}\\
@@ -110,8 +110,8 @@ pdfcreator = {}
 %	FRAME: INTRODUCTION
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-\section{Introduction :\\ Au commencement il y avait ComMod}
-  \begin{frame}[c]{L'égalité comme pré-requis}
+\section{Introduction :\\ au commencement il y avait ComMod}
+  \begin{frame}[c]{L'Egalité comme prérequis}
     \vspace{-1cm}
     \begin{columns}[onlytextwidth,T]
       \column{\dimexpr\linewidth-30mm-5mm}
@@ -132,7 +132,7 @@ pdfcreator = {}
     \end{columns}
   \end{frame}
 
-  \begin{frame}[c]{L'équité : un objectif ?}
+  \begin{frame}[c]{L'Equité : un objectif ?}
     \vspace{-1cm}
     l'approche par les communs a besoin d'un préalable, qui est l'égalité entre les participants.
     \begin{figure}
@@ -140,7 +140,7 @@ pdfcreator = {}
     \end{figure}
   \end{frame}
 
-  \begin{frame}[c]{Le décalage prométhéen et l'urgence environnementale}
+  \begin{frame}[c]{Le decalage prometheen et l'urgence environnementale}
     \vspace{-1cm}
     \begin{columns}[onlytextwidth,T]
       \column{\dimexpr\linewidth-30mm-5mm}
@@ -163,7 +163,7 @@ pdfcreator = {}
 %	FRAME: ComExp qu'est-ce que c'est ? 
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-\section{ComExp\\ Un étage de plus a la fusé ComMod}
+\section{ComExp\\ Un etage de plus a la fuse ComMod}
 
 
 \begin{frame}[c]{ComExp c'est ComMod}
@@ -192,20 +192,12 @@ pdfcreator = {}
 
 \begin{frame}[c]{Mais ComMod, avec un petit truc en plus}
   \vspace{-1cm}
-  \small Un usage massif au calcul en essayant d'échaper a la malédiction des dimensions.
+  \small Un usage massif au calcul en essayant d'échapper a la malédiction des dimensions.
 \begin{center}
  %\includegraphics[width=6cm]{img/OpenMOLE-Banner.png}\\
  \includegraphics[width=8cm]{img/CurseOfDimensionality.png}
 \end{center}
 \end{frame}
-
-
-%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-%	FRAME: ComEXp - permet de changer le point de vue
-%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-\section{ComExp\\ pour poser d'autres questions}
-
 
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 %	FRAME: ComEXp - pour quoi faire ? 
@@ -258,13 +250,119 @@ pdfcreator = {}
 \end{frame}
 
 
-\begin{frame}[c]{Traquer les changement de régimes}
+\begin{frame}[c]{Traquer les changements de régime}
   \vspace{-1cm}
   \begin{center}
     \includegraphics[width=7cm]{img/2024mathias.png}\\
     \includegraphics[width=7cm]{img/m0_pse_fatisfaction_mathias_biomass.png}
    \end{center}
 \end{frame}
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	FRAME: ComEXp - permets de changer le point de vue
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\section{ComExp\\ dans la pratique}
+
+\begin{frame}[c]{Utiliser OpenMole}
+  \vspace{-1cm}
+  \begin{columns}[onlytextwidth,T]
+    \column{\dimexpr\linewidth-30mm-5mm}
+    \begin{enumerate}
+        \item Initialement développé pour s'adbstraire des environnements de calcul
+        \item OpenMole a pris un tournant décisif en intégrant des méthodes d'explorations complexe qui bénéficiront de l'abstraction envornomental.
+    \end{enumerate}
+    
+    \includegraphics[width=7.5cm]{img/OpenMOLE-Banner}
+    \column{30mm}
+    \begin{figure}
+      \includegraphics[width=3.4cm]{img/dragonBall.png}
+    \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[c]{OpenMole et Algo G.}
+  \vspace{-1cm}
+  \begin{columns}[onlytextwidth,T]
+    \column{\dimexpr\linewidth-30mm-5mm}
+    \begin{itemize}
+      {\footnotesize
+      \item \textbf{Méthode de calibration :}
+      \begin{itemize}
+        { \scriptsize
+          \item Les méthodes de calibration utilisent des Algorithmes Génétiques (AG) pour explorer l’espace des paramètres.
+          \item L’objectif est de trouver des ensembles de paramètres produisant des sorties pour ou plusieurs objectifs.
+        }
+      \end{itemize}
+      
+      \item \textbf{Fonctions objectifs (ou fitness) :}
+      \begin{itemize}
+        { \scriptsize
+          \item Calculent des quantités à minimiser ou maximiser à partir des sorties du modèle.
+          \item Ces fonctions quantifient la qualité des sorties du modèle en fonction des objectifs.
+        }
+      \end{itemize}
+      
+      \item \textbf{On devez définir :}
+      \begin{itemize}
+        {\footnotesize
+          \item \textbf{Le génome du modèle :} 
+          \begin{itemize}
+            { \scriptsize
+              \item L’AG essaiera différents génomes et conservera le meilleur découvert jusqu’alors.
+              \item Sous forme de variables à minimiser.
+            }
+          \end{itemize}
+        }
+      \end{itemize}
+      }
+  \end{itemize}
+  
+    \column{30mm}
+    \begin{figure}
+      \includegraphics[width=4cm]{img/tortueNJ.png}
+    \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[c]{OpenMole PSE}
+  \vspace{-1cm}
+  \begin{columns}[onlytextwidth,T]
+    \column{\dimexpr\linewidth-30mm-5mm}
+    
+    \begin{itemize}
+      \item \textbf{Objectif principal :} 
+      \begin{itemize}
+        { \scriptsize
+          \item Explorer la diversité des sorties d’un modèle pour révéler tout son potentiel, y compris les dynamiques non anticipées.
+        }
+      \end{itemize}
+      
+      \item \textbf{Principe de base :}
+      \begin{itemize}
+        { \scriptsize
+          \item Sélectionner des paramètres d’entrée pour produire de nouvelles valeurs de sortie.
+          \item Progressivement, étendre la région couverte dans l’espace des sorties.
+        }
+      \end{itemize}
+      
+      \item \textbf{Évaluation de la rareté des sorties :}
+      \begin{itemize}
+        { \scriptsize
+          \item L’espace des sorties est discrétisé en cellules.
+          \item À chaque simulation, un compteur est incrémenté dans la cellule correspondante.
+          \item Les parents associés à des cellules avec des compteurs faibles sont préférentiellement sélectionnés.
+        }
+      \end{itemize}
+  \end{itemize}
+    \column{30mm}
+    \begin{figure}
+      \includegraphics[width=3.9cm]{img/the-abyss.jpg}
+    \end{figure}
+  \end{columns}
+\end{frame}
+
 
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 %	FRAME: OLDY
@@ -277,18 +375,25 @@ pdfcreator = {}
   \begin{columns}[onlytextwidth,T]
     \column{\dimexpr\linewidth-30mm-5mm}
     \begin{enumerate}
-        \item On retrouve évidement ici la vision des capabilité de \textsc{Sen} (1999)
+        \item On retrouve évidement ici la vision des capabilités de \textsc{Sen} (1999)
         \item le lien avec la vision de l’accompagnement de \textsc{Rancière} (2003)
         \item La réduction du décalage prométhéen de \textsc{Anders} (1956) pouvoir passer a l'action
         %\item Si on accepte le fait que "l'usage est une fin en soi" $\rightarrow$ on garde une posture de domination
     \end{enumerate}
-    Le processus transformatif a pour objectif de rendre libre les participants. La relation n°1 doit permettre de mesure le degré de liberté qu’on peut obtenir par l’action.
+    Le processus transformatif a pour objectif de rendre libres les participants. La relation n°1 doit permettre de mesure le degré de liberté qu’on peut obtenir par l’action.
     \includegraphics[width=7.5cm]{img/Drawing_jpm}
     \column{30mm}
     \begin{figure}
       \includegraphics[width=3.9cm]{img/joker.jpg}
     \end{figure}
   \end{columns}
+\end{frame}
+
+\begin{frame}[c]{Vers des sci. transformatives}
+  \vspace{-1cm}
+  \begin{center}
+    \includegraphics[width=12cm]{img/figure_discussion}
+   \end{center}
 \end{frame}
 
 %-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
